@@ -465,3 +465,30 @@ WHERE idCalifPersFisi = pIdCalificacion;
 END$$
 DELIMITER ;
 
+
+DELIMITER $$
+
+CREATE DEFINER=`root`@`localhost` FUNCTION `usuarioDisponible`(pNick varchar(25)) RETURNS tinyint(1)
+IF (SELECT EXISTS (SELECT Nombre FROM `Funes`.`Usuario` WHERE Nick=pNick) )THEN
+	BEGIN
+		RETURN FALSE;
+	END;
+ELSE
+	BEGIN
+		RETURN TRUE;
+	END;
+END IF $$
+delimiter;
+
+
+delimiter $$
+CREATE DEFINER=`root`@`localhost` FUNCTION `validarUsuario`(pNick varchar(25),pPass varchar(25)) RETURNS tinyint(1)
+BEGIN
+	DECLARE cont blob;
+	SELECT `Funes`.`Usuario`.`Password` INTO cont FROM `Funes`.`Usuario` WHERE `Funes`.`Usuario`.`Nick` = pNick;
+	IF pPass = CAST(aes_decrypt(cont,1) AS CHAR(2500) CHARACTER SET utf8) THEN
+		return true;
+	else return false;
+	END IF;
+END $$
+delimiter;
