@@ -473,7 +473,7 @@ DELIMITER $$
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `actualizarNotaPersonaJuridica`(pIdPersona varchar(25), pNota int)
 BEGIN
-UPDATE `funes`.`califpersfis`
+UPDATE `funes`.`calif_per_juridica`
 SET
 `idCalifcacion` = pNota
 WHERE `idPersonaJuridica` = (SELECT `personajuridica`.`idPersonaJuridica`
@@ -484,12 +484,12 @@ END
 
 DELIMITER $$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `actualizarNotaPersonaJuridica`(pIdPersona varchar(25), pNota int)
+CREATE DEFINER=`root`@`localhost` PROCEDURE `actualizarNombrePersJuridica`(pIdPersona varchar(25) ,pNombre varchar(25))
 BEGIN
-UPDATE `funes`.`califpersfis`
+UPDATE `funes`.`personajuridica`
 SET
-`idCalifcacion` = pNota
-WHERE `idPersonaJuridica` = (SELECT `personajuridica`.`idPersonaJuridica`
-FROM `funes`.`personajuridica` where cedula = pIdPersona);
+`Nombre` = pNombre
+
+WHERE `idPersonaJuridica` = pIdPersona;
 
 END
