@@ -414,10 +414,11 @@ BEGIN
 UPDATE `funes`.`califpersfis`
 SET
 `idCalifcacion` = pIdCalifcacion
-WHERE `idCalifPersFis` = (SELECT `personafisica`.`idPersonaFisica`
+WHERE `idPersona` = (SELECT `personafisica`.`idPersonaFisica`
 FROM `funes`.`personafisica` where Cedula = pIdPersona);
 
 END
+
 
 DELIMITER $$
 CREATE DEFINER=`root`@`localhost` PROCEDURE `actualizarPrimerApellido`(pCedula int , pPrimerApellido varchar(25))
@@ -466,3 +467,29 @@ WHERE idCalifPersFisi = pIdCalificacion;
 END$$
 DELIMITER ;
 
+
+
+DELIMITER $$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `actualizarNotaPersonaJuridica`(pIdPersona varchar(25), pNota int)
+BEGIN
+UPDATE `funes`.`califpersfis`
+SET
+`idCalifcacion` = pNota
+WHERE `idPersonaJuridica` = (SELECT `personajuridica`.`idPersonaJuridica`
+FROM `funes`.`personajuridica` where cedula = pIdPersona);
+
+END
+
+
+DELIMITER $$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `actualizarNotaPersonaJuridica`(pIdPersona varchar(25), pNota int)
+BEGIN
+UPDATE `funes`.`califpersfis`
+SET
+`idCalifcacion` = pNota
+WHERE `idPersonaJuridica` = (SELECT `personajuridica`.`idPersonaJuridica`
+FROM `funes`.`personajuridica` where cedula = pIdPersona);
+
+END
