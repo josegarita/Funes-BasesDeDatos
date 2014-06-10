@@ -1,0 +1,467 @@
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertarBaneo`(pFechaInicio varchar(11), pFechaFin varchar(11), pIdUsuario int)
+BEGIN
+INSERT INTO `Funes`.`Baneo`
+(`FechaCreacion`,
+`FechaDeFin`,
+`idUsuario`)
+VALUES
+(pFechaInicio, 
+pFechaFin,
+pIdUsuario);
+
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `InsertarBarrio`(pNombre Varchar(25))
+BEGIN
+INSERT INTO `Funes`.`Barrio`
+(`Nombre`)
+VALUES
+(pNombre);
+ 
+END$$
+
+DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertarCalificacion`(pNota int)
+BEGIN
+INSERT INTO `Funes`.`Calificacion`
+(`Calificacion`)
+VALUES
+(pNota);
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertarCalifPersFis`(pIdPersona int,pIdCalificacion int)
+BEGIN
+INSERT INTO `Funes`.`CalifPersFis`
+(`idPersona`,
+`idCalifcacion`)
+VALUES
+(pIdPersona,
+pIdCalificacion);
+
+END$$
+DELIMITER ;
+
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertarCanton`(pNombre varchar(25))
+BEGIN
+INSERT INTO `Funes`.`Canton`
+(`Nombre`)
+VALUES
+(pNombre);
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertarCargo`(pCargo varchar(25))
+BEGIN
+INSERT INTO `Funes`.`Cargo`
+(`Cargo`)
+VALUES
+(pCargo);
+
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertarCategoriaPorPersona`(pIdPersona int,
+pIdCategoria int)
+BEGIN
+INSERT INTO `Funes`.`CategoriaPorPersona`
+(`idPersona`,
+`idCategoria`)
+VALUES
+(pIdPersona,
+idCategoria);
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertarComentario`(pComentario varchar(85), pIdUsuario int)
+BEGIN
+INSERT INTO `Funes`.`Comentario`
+(`Comentario`,
+`idUsuario`)
+VALUES
+(pComentario,pIdUsuario);
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertarComentarioFisico`(pIdPersona int,
+pIdComentario int)
+BEGIN
+INSERT INTO `Funes`.`ComentarioFisico`
+(`idPersona`,
+`idComentario`)
+VALUES
+(pIdPersona,
+pIdComentario);
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertarComentarioJuridica`(pIdPersona int,
+pIdComentario int)
+BEGIN
+INSERT INTO `Funes`.`ComentarioJuridica`
+(`idPersona`,
+`idComentario`)
+VALUES
+(pIdPersona,
+pIdComentario);
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertarDireccion`(pIdPais int,
+pIdCanton int,
+pIdProvincia int,
+pIdBarrio int,
+pSeÃ±al varchar(85),
+pIdPersonaJurid int,
+pIdDistrito int)
+BEGIN
+INSERT INTO `Funes`.`Direccion`
+(`idPais`,
+`idCanton`,
+`IdProvincia`,
+`idBarrio`,
+`SeÃ±al`,
+`idPersonaJurid`,
+`idDistrito`)
+VALUES
+(pIdPais,
+pIdCanton,
+pIdProvincia,
+pIdBarrio,
+pSeÃ±al,
+pIdPersonaJurid,
+pIdDistrito);
+
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertarGenero`(pTipo varchar(25))
+BEGIN
+INSERT INTO `Funes`.`Genero`
+(`Tipo`)
+VALUES
+(pTipo);
+
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertarInstitucionLabora`(
+pNombre varchar(25),
+pFechaInicio varchar(25),
+pFechaFin varchar(25),
+pIdCargo int)
+BEGIN
+INSERT INTO `Funes`.`InstitucionLabora`
+(`Nombre`,
+`FechaInicio`,
+`FechaFin`,
+`idCargo`)
+VALUES
+(pNombre,
+pFechaInicio,
+pFechaFin,
+pIdCargo
+);
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertarPais`(pNombre varchar(25))
+BEGIN
+INSERT INTO `Funes`.`pais`
+(`Nombre`)
+VALUES
+(pNombre);
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertarPersonaFis`(pCedula int, pNombre varchar(25),pPrimerApellido varchar(25), pSegundoApellido varchar(25),pFechaNacimiento varchar(25), pIdGenero int)
+BEGIN
+INSERT INTO `Funes`.`PersonaFisica`
+(`Cedula`,
+`Nombe`,
+`PrimerApellido`,
+`SegundoApellido`,
+`FechaNacimiento`,
+`idGenero`)
+VALUES
+(pCedula,
+pNombre,
+pPrimerApellido,
+pSegundoApellido,
+pFechaNacimiento,
+pIdGenero);
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertarPersonaJuridica`(pNombre varchar(25),
+pCedula int,
+pIdCategoriaEntidad int)
+BEGIN
+INSERT INTO `Funes`.`PersonaJuridica`
+(`Nombre`,
+`Cedula`)
+VALUES
+(pNombre,
+pCedula);
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertarPersonaPorInstitucion`(pIdPersona int,
+pIdInstitucion int)
+BEGIN
+INSERT INTO `Funes`.`personaporinstitucion`
+(`idPersona`,
+`idInstitucion`)
+VALUES
+(pIdPersona,
+pIdInstitucion);
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertarProvincia`(pNombre varchar(25))
+BEGIN
+INSERT INTO `Funes`.`Provincia`
+(`Nombre`)
+VALUES
+(pNombre);
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertarReporte`(pIdUsuario int,
+pDescripcion varchar(85))
+BEGIN
+INSERT INTO `Funes`.`Reporte`
+(`idUsuario`,
+`Descripcion`)
+VALUES
+(pIdUsuario,
+pDescripcion);
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertUsuario`(pNombre varchar(25),
+pPassword varchar(25),
+pNick varchar(25),
+pPrivado boolean)
+BEGIN
+INSERT INTO `Funes`.`Usuario`
+(`Nombre`,
+`Password`,
+`Nick`,
+`Privado`)
+VALUES
+(pNombre,
+aes_encrypt(pPassword,1),
+pNick,
+pPrivado);
+END$$
+DELIMITER ;
+
+
+
+
+DELIMITER $$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertarCalif_per_juridica`(pIdCalificacion int,
+pIdPersonaJuridica int)
+BEGIN
+INSERT INTO `Funes`.`Calif_Per_Juridica`
+(`idCalificacion`,
+`idPersonaJuridica`,
+`EstadoNota`)
+VALUES
+(pIdCalificacion,
+pIdPersonaJuridica,
+true);
+
+END$$
+DELIMITER ;
+
+DELIMITER $$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertarPersonaxcategoria`(pIdPersonaJuridica int,
+pIdCategoria int)
+BEGIN
+INSERT INTO `Funes`.`Personaxcategoria`
+(`idPersonaJuridica`,
+`idCategoriaEntidad`)
+VALUES
+(pIdPersonaJuridica,
+pIdCategoria);
+
+END$$
+DELIMITER ;
+
+USE `funes`;
+DROP procedure IF EXISTS `insertarCategoria`;
+
+DELIMITER $$
+USE `funes`$$
+CREATE PROCEDURE `insertarCategoria` (pCategoria varchar(25))
+BEGIN
+INSERT INTO `funes`.`categoria`
+(`Nombre`)
+VALUES
+(pCategoria);
+
+END$$
+
+DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertarDistrito`(pNombre varchar(25))
+BEGIN
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+(pNombre);
+
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insetarCategoriaPersonaFisica`(pIdPersona int,
+pIdCategoria int)
+BEGIN
+INSERT INTO `funes`.`categoriaporpersonafisica`
+(`idPersona`,
+`idCategoria`)
+VALUES
+(pIdPersona,
+pIdCategoria);
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertarPersonaPorCategoriaJur`(pIidPersonaJuridica int,
+pIdCategoriaEntidad int)
+BEGIN
+INSERT INTO `funes`.`personaporcategoriajuridica`
+(`idPersonaJuridica`,
+`idCategoriaEntidad`)
+VALUES
+(pIidPersonaJuridica,
+pIdCategoriaEntidad);
+
+END$$
+DELIMITER ;
+
+__________________________________________________________________
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `actualizarFechaNacimiento`(pCedula int, pFechaNacimiento varchar(11))
+BEGIN
+UPDATE `funes`.`personafisica`
+SET
+`FechaNacimiento` = pFechaNacimiento
+WHERE `Cedula` = pCedula;
+END$$
+DELIMITER ;
+
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `actualizarGenero`(pCedula int , pIdGenero int)
+BEGIN
+UPDATE `funes`.`personafisica`
+SET
+`idGenero` = pIdGenero
+WHERE `cedula` = pCedula;
+
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `actualizarNombre`(pCedula int,pNombre varchar(25))
+BEGIN
+
+UPDATE `funes`.`personafisica`
+SET
+`Nombe` = pNombre
+WHERE `Cedula` = pCedula;
+
+
+END$$
+DELIMITER ;
+
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `actualizarNota`(pIdPersona int, pIdCalidicacion int)
+BEGIN
+UPDATE `funes`.`califpersfis`
+SET
+`idCalifcacion` = pIdCalifcacion
+WHERE `idCalifPersFis` = pIdPersona;
+
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `actualizarPrimerApellido`(pCedula int , pPrimerApellido varchar(25))
+BEGIN
+UPDATE `funes`.`personafisica`
+SET
+`PrimerApellido` = pPrimerApellido
+WHERE `cedula` = pCedula ;
+END$$
+DELIMITER ;
+
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `actualizarSegundoApellido`(pCedula int, pSegundoApellido varchar(25))
+BEGIN
+UPDATE `funes`.`personafisica`
+SET
+`SegundoApellido` = pSegundoApellido
+WHERE `Cedula` = pCedula;
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `borrarNotaJuridica`(pIdCalificacion int)
+BEGIN
+
+UPDATE `funes`.`calif_per_juridica`
+SET
+`EstadoNota` = false
+WHERE idCalif_Per_Juridica = pIdCalificacion;
+
+
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `borrarNotaPersFisica`(pIdCalificacion int)
+BEGIN
+
+UPDATE `funes`.`califpersfis`
+SET
+`EstadoNota` = false
+WHERE idCalifPersFisi = pIdCalificacion;
+
+
+END$$
+DELIMITER ;
+
