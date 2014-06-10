@@ -408,15 +408,16 @@ DELIMITER ;
 
 
 DELIMITER $$
+
 CREATE DEFINER=`root`@`localhost` PROCEDURE `actualizarNota`(pIdPersona int, pIdCalidicacion int)
 BEGIN
 UPDATE `funes`.`califpersfis`
 SET
 `idCalifcacion` = pIdCalifcacion
-WHERE `idCalifPersFis` = pIdPersona;
+WHERE `idCalifPersFis` = (SELECT `personafisica`.`idPersonaFisica`
+FROM `funes`.`personafisica` where Cedula = pIdPersona);
 
-END$$
-DELIMITER ;
+END
 
 DELIMITER $$
 CREATE DEFINER=`root`@`localhost` PROCEDURE `actualizarPrimerApellido`(pCedula int , pPrimerApellido varchar(25))
