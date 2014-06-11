@@ -1,0 +1,12 @@
+DELIMITER $$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `Mostrar_Direc`(IdPersonaJurid int)
+BEGIN
+
+select Direc.Señal,P.Nombre,C.Nombre,D.Nombre,B.Nombre from funes.direccion as Direc,funes.provincia as P,funes.canton as C,funes.distrito as D,funes.barrio as B,funes.personajuridica as PJ
+where PJ.idPersonaJuridica=IdPersonaJurid and P.idProvincia=Direc.IdProvincia and C.idCanton=Direc.idCanton and D.idDistrito=Direc.idDistrito and B.idBarrio=Direc.idBarrio;
+
+
+END$$
+
+DELIMITER ;
