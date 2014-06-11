@@ -1,0 +1,14 @@
+DELIMITER $$
+USE `funes`$$
+CREATE PROCEDURE `Consulta_Personas` (pId_PersonaFis int)
+BEGIN
+
+select PF.Cedula,PF.Nombe,PF.PrimerApellido,PF.SegundoApellido,PF.FechaNacimiento,G.Tipo ,Calif.Calificacion, CaliPerFis.review 
+from funes.personafisica as PF, funes.califpersfis as CaliPerFis, funes.calificacion as Calif, funes.genero as G
+where PF.idPersonaFisica =pId_PersonaFis  and  CaliPerFis.idPersona=PF.idPersonaFisica and PF.idGenero=G.idGenero  and  CaliPerFis.idCalifcacion=
+Calif.idCalificacion;
+
+
+END$$
+
+DELIMITER ;
