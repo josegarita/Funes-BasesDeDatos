@@ -1,0 +1,12 @@
+/* Devolver el Id_Persona fisica esta recibe la cedula ya que es unica */
+DELIMITER $$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `Id_Persona`(pCedula int)
+BEGIN
+
+select Person.idPersonaFisica from funes.personafisica as Person 
+where Person.Cedula=pCedula;
+
+END$$
+
+DELIMITER ;
