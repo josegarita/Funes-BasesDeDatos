@@ -1,0 +1,2 @@
+/*Agrega la columna para la foreign key */ 
+alter table funes.institucionlabora add id_Institucion int;
