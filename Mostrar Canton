@@ -1,0 +1,7 @@
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `MostrarCanton`()
+BEGIN
+select funes.canton.Nombre from funes.canton order by funes.canton.Nombre;
+
+END $$
+DELIMITER ;
