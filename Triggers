@@ -1,0 +1,395 @@
+// Jose Rodolfo Garita  1/6/2014 -4:32
+//Triggers auditoria
+//
+//
+//
+//
+
+DELIMITER $$ 
+create TRIGGER baneo_BITrigger BEFORE INSERT ON `Funes`.`Baneo` FOR EACH ROW
+BEGIN
+	set NEW.FechaCreacionTupla := curdate();
+	set NEW.UsuarioCreacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER barrio_BITrigger BEFORE INSERT ON `Funes`.barrio FOR EACH ROW
+BEGIN
+	set NEW.FechaCreacionTupla := curdate();
+	set NEW.UsuarioCreacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER CalifPersJurid_BITrigger BEFORE INSERT ON `Funes`.`calif_per_juridica` FOR EACH ROW
+BEGIN
+	set NEW.FechaCreacionTupla := curdate();
+	set NEW.UsuarioCreacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER calificacion_BITrigger BEFORE INSERT ON `Funes`.`calificacion` FOR EACH ROW
+BEGIN
+	set NEW.FechaCreacionTupla := curdate();
+	set NEW.UsuarioCreacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER califpersfis_BITrigger BEFORE INSERT ON `Funes`.`califpersfis` FOR EACH ROW
+BEGIN
+	set NEW.FechaCreacionTupla := curdate();
+	set NEW.UsuarioCreacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER canton_BITrigger BEFORE INSERT ON `Funes`.`canton` FOR EACH ROW
+BEGIN
+	set NEW.FechaCreacionTupla := curdate();
+	set NEW.UsuarioCreacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER cargo_BITrigger BEFORE INSERT ON `Funes`.`cargo` FOR EACH ROW
+BEGIN
+	set NEW.FechaCreacionTupla := curdate();
+	set NEW.UsuarioCreacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER categoria_BITrigger BEFORE INSERT ON `Funes`.`categoria` FOR EACH ROW
+BEGIN
+	set NEW.FechaCreacionTupla := curdate();
+	set NEW.UsuarioCreacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER categoriaporpersonafisica_BITrigger BEFORE INSERT ON `Funes`.`categoriaporpersonafisica` FOR EACH ROW
+BEGIN
+	set NEW.FechaCreacionTupla := curdate();
+	set NEW.UsuarioCreacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER comentario_BITrigger BEFORE INSERT ON `Funes`.`comentario` FOR EACH ROW
+BEGIN
+	set NEW.FechaCreacionTupla := curdate();
+	set NEW.UsuarioCreacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER comentariofisico_BITrigger BEFORE INSERT ON `Funes`.`comentariofisico` FOR EACH ROW
+BEGIN
+	set NEW.FechaCreacionTupla := curdate();
+	set NEW.UsuarioCreacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER comentariojuridica_BITrigger BEFORE INSERT ON `Funes`.`comentariojuridica` FOR EACH ROW
+BEGIN
+	set NEW.FechaCreacionTupla := curdate();
+	set NEW.UsuarioCreacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER direccion_BITrigger BEFORE INSERT ON `Funes`.`direccion` FOR EACH ROW
+BEGIN
+	set NEW.FechaCreacionTupla := curdate();
+	set NEW.UsuarioCreacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER distrito_BITrigger BEFORE INSERT ON `Funes`.`distrito` FOR EACH ROW
+BEGIN
+	set NEW.FechaCreacionTupla := curdate();
+	set NEW.UsuarioCreacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER genero_BITrigger BEFORE INSERT ON `Funes`.`genero` FOR EACH ROW
+BEGIN
+	set NEW.FechaCreacionTupla := curdate();
+	set NEW.UsuarioCreacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER institucionlabora_BITrigger BEFORE INSERT ON `Funes`.`institucionlabora` FOR EACH ROW
+BEGIN
+	set NEW.FechaCreacionTupla := curdate();
+	set NEW.UsuarioCreacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER pais_BITrigger BEFORE INSERT ON `Funes`.`pais` FOR EACH ROW
+BEGIN
+	set NEW.FechaCreacionTupla := curdate();
+	set NEW.UsuarioCreacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER personafisica_BITrigger BEFORE INSERT ON `Funes`.`personafisica` FOR EACH ROW
+BEGIN
+	set NEW.FechaCreacionTupla := curdate();
+	set NEW.UsuarioCreacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER personajuridica_BITrigger BEFORE INSERT ON `Funes`.`personajuridica` FOR EACH ROW
+BEGIN
+	set NEW.FechaCreacionTupla := curdate();
+	set NEW.UsuarioCreacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER personaporcategoriajuridica_BITrigger BEFORE INSERT ON `Funes`.`personaporcategoriajuridica` FOR EACH ROW
+BEGIN
+	set NEW.FechaCreacionTupla := curdate();
+	set NEW.UsuarioCreacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER personaporinstitucion_BITrigger BEFORE INSERT ON `Funes`.`personaporinstitucion` FOR EACH ROW
+BEGIN
+	set NEW.FechaCreacionTupla := curdate();
+	set NEW.UsuarioCreacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER provincia_BITrigger BEFORE INSERT ON `Funes`.`provincia` FOR EACH ROW
+BEGIN
+	set NEW.FechaCreacionTupla := curdate();
+	set NEW.UsuarioCreacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER reporte_BITrigger BEFORE INSERT ON `Funes`.`reporte` FOR EACH ROW
+BEGIN
+	set NEW.FechaCreacionTupla := curdate();
+	set NEW.UsuarioCreacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER usuario_BITrigger BEFORE INSERT ON `Funes`.`usuario` FOR EACH ROW
+BEGIN
+	set NEW.FechaCreacionTupla := curdate();
+	set NEW.UsuarioCreacion := current_user();
+END $$
+DELIMITER ;
+
+
+---_____________________________
+
+
+
+DELIMITER $$ 
+create TRIGGER baneo_BUTrigger BEFORE update ON `Funes`.`Baneo` FOR EACH ROW
+BEGIN
+	set NEW.FechaActualizacion := curdate();
+	set NEW.UsuarioActualizacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER barrio_BUTrigger BEFORE update ON `Funes`.barrio FOR EACH ROW
+BEGIN
+	set NEW.FechaActualizacion := curdate();
+	set NEW.UsuarioActualizacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER CalifPersJurid_BUTrigger BEFORE update ON `Funes`.`calif_per_juridica` FOR EACH ROW
+BEGIN
+	set NEW.FechaActualizacion := curdate();
+	set NEW.UsuarioActualizacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER calificacion_BUTrigger BEFORE update ON `Funes`.`calificacion` FOR EACH ROW
+BEGIN
+	set NEW.FechaActualizacion := curdate();
+	set NEW.UsuarioActualizacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER califpersfis_BUTrigger BEFORE update ON `Funes`.`califpersfis` FOR EACH ROW
+BEGIN
+	set NEW.FechaActualizacion := curdate();
+	set NEW.UsuarioActualizacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER canton_BUTrigger BEFORE update ON `Funes`.`canton` FOR EACH ROW
+BEGIN
+	set NEW.FechaActualizacion := curdate();
+	set NEW.UsuarioActualizacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER cargo_BUTrigger BEFORE update ON `Funes`.`cargo` FOR EACH ROW
+BEGIN
+	set NEW.FechaActualizacion := curdate();
+	set NEW.UsuarioActualizacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER categoria_BUTrigger BEFORE update ON `Funes`.`categoria` FOR EACH ROW
+BEGIN
+	set NEW.FechaActualizacion := curdate();
+	set NEW.UsuarioActualizacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER categoriaporpersonafisica_BUTrigger BEFORE update ON `Funes`.`categoriaporpersonafisica` FOR EACH ROW
+BEGIN
+	set NEW.FechaActualizacion := curdate();
+	set NEW.UsuarioActualizacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER comentario_BUTrigger BEFORE update ON `Funes`.`comentario` FOR EACH ROW
+BEGIN
+	set NEW.FechaActualizacion := curdate();
+	set NEW.UsuarioActualizacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER comentariofisico_BUTrigger BEFORE update ON `Funes`.`comentariofisico` FOR EACH ROW
+BEGIN
+	set NEW.FechaActualizacion := curdate();
+	set NEW.UsuarioActualizacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER comentariojuridica_BUTrigger BEFORE update ON `Funes`.`comentariojuridica` FOR EACH ROW
+BEGIN
+	set NEW.FechaActualizacion := curdate();
+	set NEW.UsuarioActualizacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER direccion_BUTrigger BEFORE update ON `Funes`.`direccion` FOR EACH ROW
+BEGIN
+	set NEW.FechaActualizacion := curdate();
+	set NEW.UsuarioActualizacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER distrito_BUTrigger BEFORE update ON `Funes`.`distrito` FOR EACH ROW
+BEGIN
+	set NEW.FechaActualizacion := curdate();
+	set NEW.UsuarioActualizacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER genero_BUTrigger BEFORE update ON `Funes`.`genero` FOR EACH ROW
+BEGIN
+	set NEW.FechaActualizacion := curdate();
+	set NEW.UsuarioActualizacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER institucionlabora_BUTrigger BEFORE update ON `Funes`.`institucionlabora` FOR EACH ROW
+BEGIN
+	set NEW.FechaActualizacion := curdate();
+	set NEW.UsuarioActualizacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER pais_BUTrigger BEFORE update ON `Funes`.`pais` FOR EACH ROW
+BEGIN
+	set NEW.FechaActualizacion := curdate();
+	set NEW.UsuarioActualizacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER personafisica_BUTrigger BEFORE update ON `Funes`.`personafisica` FOR EACH ROW
+BEGIN
+	set NEW.FechaActualizacion := curdate();
+	set NEW.UsuarioActualizacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER personajuridica_BUTrigger BEFORE update ON `Funes`.`personajuridica` FOR EACH ROW
+BEGIN
+	set NEW.FechaActualizacion := curdate();
+	set NEW.UsuarioActualizacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER personaporcategoriajuridica_BUTrigger BEFORE update ON `Funes`.`personaporcategoriajuridica` FOR EACH ROW
+BEGIN
+	set NEW.FechaActualizacion := curdate();
+	set NEW.UsuarioActualizacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER personaporinstitucion_BUTrigger BEFORE update ON `Funes`.`personaporinstitucion` FOR EACH ROW
+BEGIN
+	set NEW.FechaActualizacion := curdate();
+	set NEW.UsuarioActualizacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER provincia_BUTrigger BEFORE update ON `Funes`.`provincia` FOR EACH ROW
+BEGIN
+	set NEW.FechaActualizacion := curdate();
+	set NEW.UsuarioActualizacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER reporte_BUTrigger BEFORE update ON `Funes`.`reporte` FOR EACH ROW
+BEGIN
+	set NEW.FechaActualizacion := curdate();
+	set NEW.UsuarioActualizacion := current_user();
+END $$
+DELIMITER ;
+
+DELIMITER $$ 
+create TRIGGER usuario_BUTrigger BEFORE update ON `Funes`.`usuario` FOR EACH ROW
+BEGIN
+	set NEW.FechaActualizacion := curdate();
+	set NEW.UsuarioActualizacion := current_user();
+END $$
+DELIMITER ;
