@@ -1,0 +1,11 @@
+/*procedimiento para insertar la Institucion */
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertarInstitucion`(pNombre varchar(45))
+BEGIN
+INSERT INTO `Funes`.`Institucion`
+(`nombre`)
+VALUES
+(pNombre);
+
+END $$
+Delimiter ;
