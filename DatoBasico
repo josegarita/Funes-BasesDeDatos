@@ -1,0 +1,1105 @@
+use funes;
+/*--Insercion de provincias */
+
+
+INSERT INTO `funes`.`provincia`
+(`Nombre`)
+VALUES
+('San Jose');
+
+
+INSERT INTO `funes`.`provincia`
+(`Nombre`)
+VALUES
+('Alajuela');
+
+INSERT INTO `funes`.`provincia`
+(`Nombre`)
+VALUES
+('Heredia');
+
+INSERT INTO `funes`.`provincia`
+(`Nombre`)
+VALUES
+('Cartago');
+
+INSERT INTO `funes`.`provincia`
+(`Nombre`)
+VALUES
+('Limon');
+
+INSERT INTO `funes`.`provincia`
+(`Nombre`)
+VALUES
+('Puntarenas');
+
+INSERT INTO `funes`.`provincia`
+(`Nombre`)
+VALUES
+('Guanacaste');
+ 
+
+/*--Insercion de Cantones*/
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('San Jóse');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Escazu');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Desamparados');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Puriscal');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Santa Ana');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Aserri');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Tibas');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Montes de Oca');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Curridabat');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('San Ramon');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Grecia');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Atenas');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Naranjo');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Palmares');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Orotina');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('San Carlos');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Zarcero');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Los Chiles');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Guatuso');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Barva');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Santo Domingo');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Santa Barbara');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Belen');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Flores');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('San Pablo');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Sarapiqui');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Esparza');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Montes de Oro');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Osa');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Golfito');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Coto Brus');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Parrita');
+
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Corredores');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Garabito');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Paraiso');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('La Union');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Jimenez');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Turialba');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Oreamundo');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('El Guarco');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Liberia');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Nicoya');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Santa Cruz');
+
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Carrillo');
+
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Cañas');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('La Cruz');
+
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Pocosi');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Siquirres');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Talamanca');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Matina');
+
+INSERT INTO `funes`.`canton`
+(`Nombre`)
+VALUES
+('Guacimo');
+
+
+/*--Insercion de Distritos*/
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Zapote');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Uruca');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Hatillo');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Pavas');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('San Antonio');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('San Rafael');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('San Miguel');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Frailes');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Rosario');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('San Cristobal');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Santiago');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Calendaria');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Mercedes Sur');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Santa Ana');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Salitral');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Pozos');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('San Gabriel');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Legua');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Monte Rey');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('San Juan');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Cinco Esquinas');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('León XIII');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('San Pedro');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Sabanilla');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Mercedes');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Curridabat');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Granadilla');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Tirases');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('San Juan');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Peñas Blancas');
+
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Concepción');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('San Roque');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Rio Cuarto');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Bolivar');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Jesús');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('San Isidro');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Escobal');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('San Jerónimo');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('El Rosario');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Palmitos');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('La Granja');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Buenos Aires');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Mastate');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Hacienda Vieja');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Ceiba');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Quesada');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Florencia');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Aguas Zarcas');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Pital');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Caño Negro');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('El Amparo');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('San Jorge');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('San Rafael');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Buena Vista');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Cote');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('San Francisco');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('varablanca');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('San Roque');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('San Vicente');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Santo Tomás');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Santa Rosa');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('San Josecito');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Ángeles');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('La Ribera');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('La Asunción');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('San Joaquín');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Barrantes');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Llorente');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('San Juan Grande');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Miramar');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Perto Cortés');
+
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Bahía Ballena');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Guaycará');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Pavón');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('San Vito');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Agua Buena');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Limoncito');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Parrita');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('La Cuesta');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Paso Canoa');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Jacó');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Tárcores');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Paraíso');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Orosí');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Cachi');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('San Diego');
+
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Tres Ríos');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Juan Viñas');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Pejibaye');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('La suiza');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Santa Cruz');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Cipreses');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Patio de Agua');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Cañas Dulce');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Mansión');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Quebrada Onda');
+
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Sámara');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Nosara');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Cartágena');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Tamarindo');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('La Fortuna');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Colorado');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Arenal');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Valle Estrella');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Río Blanco');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Sixaola');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Río Jiménez');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Matina');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Cahuita');
+
+INSERT INTO `funes`.`distrito`
+(`Nombre`)
+VALUES
+('Alegría');
+
+
+/*--Insercion de países*/
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('China');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Costa Rica');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Estados Unidos');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Argentina');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Francia');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Alemania');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Canada');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Cuba');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Colombia');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Brasil');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Nicaragua');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('España');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Panama');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Rusia');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Japón');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Uruguay');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Paraguay');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Taiwan');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Portugal');
+
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('México');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Italia');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Honduras');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Salvador');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Guatemala');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Ecuador');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Chile');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Bolivia');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Australia');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Republica Dominicana');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Republica Checa');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Filandia');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Grecia');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Haiti');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Hungría');
+
+INSERT INTO `funes`.`pais`
+(`Nombre`)
+VALUES
+('Perú');
+
+
+/*--Insercion de Calificaciiones*/
+
+
+INSERT INTO `funes`.`calificacion`
+(`Calificacion`)
+VALUES
+(1);
+
+INSERT INTO `funes`.`calificacion`
+(`Calificacion`)
+VALUES
+(2);
+
+INSERT INTO `funes`.`calificacion`
+(`Calificacion`)
+VALUES
+(3);
+
+INSERT INTO `funes`.`calificacion`
+(`Calificacion`)
+VALUES
+(4);
+
+INSERT INTO `funes`.`calificacion`
+(`Calificacion`)
+VALUES
+(5);
+
+INSERT INTO `funes`.`calificacion`
+(`Calificacion`)
+VALUES
+(6);
+
+INSERT INTO `funes`.`calificacion`
+(`Calificacion`)
+VALUES
+(7);
+
+INSERT INTO `funes`.`calificacion`
+(`Calificacion`)
+VALUES
+(8);
+
+INSERT INTO `funes`.`calificacion`
+(`Calificacion`)
+VALUES
+(9);
+
+INSERT INTO `funes`.`calificacion`
+(`Calificacion`)
+VALUES
+(10);
+
+/*--Insercion de Genero*/
+
+INSERT INTO `funes`.`genero`
+(`Tipo`)
+VALUES
+('M');
+
+INSERT INTO `funes`.`genero`
+(`Tipo`)
+VALUES
+('F');
