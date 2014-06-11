@@ -1,0 +1,4 @@
+/*Agrega la columna review para que justifique su calificacion */
+alter table funes.califpersfis add review varchar(200);
+
+alter table funes.calif_per_juridica add review varchar(200);
