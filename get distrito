@@ -1,0 +1,8 @@
+/* Devolver el id del distrito */ 
+DELIMITER $$
+USE `funes`$$
+CREATE PROCEDURE `Id_Distrito` (pNombre varchar(25))
+BEGIN
+select dist.idDistrito from funes.distrito as dist
+where dist.Nombre=pNombre;
+END$$
