@@ -1,0 +1,5 @@
+/*Crea la tabla Institucion */ 
+CREATE TABLE institucion(
+    Id_institucion int primary key not null auto_increment, 
+	nombre varchar(45)
+	);
