@@ -1,0 +1,12 @@
+/* Devuelve el Id de la tabla institucion*/
+DELIMITER $$
+USE `funes`$$
+CREATE PROCEDURE `Id_Institucion` (pNombre varchar(45))
+BEGIN
+
+select Ins.Id_institucion from funes.institucion as Ins
+where Ins.nombre=pNombre;
+
+END$$
+
+DELIMITER ;
