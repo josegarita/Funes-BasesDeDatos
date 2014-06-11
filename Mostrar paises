@@ -1,0 +1,8 @@
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `MostrarPaises`()
+BEGIN
+
+select funes.pais.Nombre from funes.pais order by funes.pais.Nombre;
+
+END $$
+DELIMITER ;
