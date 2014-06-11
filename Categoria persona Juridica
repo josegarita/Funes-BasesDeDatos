@@ -1,0 +1,13 @@
+/* Muestra el nombre y cedula de la persona juridica en la categoria que se encuentra*/
+DELIMITER $$
+USE `funes`$$
+CREATE PROCEDURE `Categoria_x_PersonaJuri` (pIdCategoria int)
+BEGIN
+
+select PersonJ.Nombre,PersonJ.Cedula from funes.personajuridica as PersonJ, funes.personaporcategoriajuridica as PCJ
+where PCJ.idCategoriaEntidad=pIdCategoria and PersonJ.idPersonaJuridica=PCJ.idPersonaJuridica;
+
+
+END$$
+
+DELIMITER ;
