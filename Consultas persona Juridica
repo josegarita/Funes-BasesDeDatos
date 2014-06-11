@@ -1,0 +1,18 @@
+USE `funes`;
+DROP procedure IF EXISTS `Consulta_PersonaJuridica`;
+
+DELIMITER $$
+USE `funes`$$
+CREATE PROCEDURE `Consulta_PersonaJuridica` (pIdPersonaJ int)
+BEGIN
+
+select PJ.Cedula, PJ.Nombre,Calif.Calificacion,CalifperJuri.review
+from funes.personajuridica as PJ, funes.calif_per_juridica as CalifperJuri, funes.calificacion as Calif
+where PJ.idPersonaJuridica=pIdPersonaJ 
+and CalifperJuri.idCalificacion=Calif.idCalificacion 
+and CalifperJuri.idPersonaJuridica=PJ.idPersonaJuridica; 
+
+
+END$$
+
+DELIMITER ;
