@@ -23,3 +23,7 @@ Delimiter ;
 /* Agrega la columna Id de la institucion*/
 ALTER TABLE Funes.InstitucionLabora ADD 
 idInstitucion INT;
+
+/* Datos de usuario para calificaciones
+ALTER TABLE Funes.calif_per_juridica ADD idUsuarioInserta int;
+ALTER TABLE Funes.califpersfis ADD idUsuarioInserta int;
