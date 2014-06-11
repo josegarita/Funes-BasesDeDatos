@@ -1,0 +1,8 @@
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `MostrarDistrito`()
+BEGIN
+
+select funes.distrito.Nombre from funes.distrito order by funes.distrito.Nombre;
+
+END $$
+DELIMITER ;
