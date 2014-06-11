@@ -1,0 +1,12 @@
+/* Devuelve el Id de la categoria */
+DELIMITER $$
+USE `funes`$$
+CREATE PROCEDURE `Id_Categoria` (pCategoria varchar (45))
+BEGIN
+
+select Cat.idCategoria from funes.categoria as Cat
+where Cat.Nombre=pCategoria;
+
+END$$
+
+DELIMITER ;
