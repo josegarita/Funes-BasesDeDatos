@@ -1,0 +1,10 @@
+/* Devuelve el id calificacion */ 
+DELIMITER $$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `Id_Calificacion`(pCalificacion int)
+BEGIN
+select Cali.idCalificacion from calificacion as Cali
+where Cali.Calificacion=pCalificacion;
+END$$
+
+DELIMITER ;
