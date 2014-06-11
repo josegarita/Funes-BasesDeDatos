@@ -1,2 +1,3 @@
-/*Agrega la columna para la foreign key */ 
-alter table funes.institucionlabora add id_Institucion int;
+/* Agrega la columna Id de la institucion (FK)*/
+ALTER TABLE Funes.InstitucionLabora ADD constraint Fk_Id_Institucion
+foreign key (id_Institucion)  references funes.institucion (Id_institucion);
