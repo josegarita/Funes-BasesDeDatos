@@ -1,0 +1,8 @@
+/*Devolver el id del Canton*/
+DELIMITER $$
+USE `funes`$$
+CREATE PROCEDURE `Id_Canton` (pCanton varchar(25))
+BEGIN
+select Can.idCanton from funes.canton as Can 
+where Can.Nombre=pCanton;
+END$$
