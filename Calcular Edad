@@ -1,0 +1,11 @@
+DELIMITER $$
+
+CREATE DEFINER=`root`@`localhost` FUNCTION `Edad_PersonaFisica`(pCedula int) RETURNS int(11)
+BEGIN
+
+declare age int;
+select (year(curdate())) -year(PF.FechaNacimiento) -(right(curdate(),5)<right(PF.FechaNacimiento,5)) into age from funes.personafisica as PF
+where PF.Cedula=pCedula;
+
+RETURN age ;
+END
