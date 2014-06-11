@@ -1,0 +1,14 @@
+USE `funes`;
+
+
+/* Devolver el idPersonaJuridica recibe la cedula juridica ya que esta es unica  */
+DELIMITER $$
+CREATE PROCEDURE `Id_PersonaJuridica` (CedulaJur varchar(45))
+BEGIN
+
+select Pj.idPersonaJuridica from funes.personajuridica as Pj
+where Pj.Cedula=CedulaJur;
+
+END$$
+
+DELIMITER ;
