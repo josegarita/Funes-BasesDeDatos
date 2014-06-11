@@ -1,0 +1,4 @@
+use funes;
+
+/*Elimina el La columna Nombre de la tabla InstitucionLabora*/ 
+alter table funes.institucionlabora drop column Nombre;
