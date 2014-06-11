@@ -1,0 +1,11 @@
+/*Devuelve el Id de pais */
+
+DELIMITER $$
+USE `funes`$$
+CREATE PROCEDURE `Id_pais` (pNombre varchar(45))
+BEGIN
+
+select Pais.idPais from funes.pais as Pais
+where Pais.Nombre=pNombre;
+
+END$$
