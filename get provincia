@@ -1,0 +1,10 @@
+/* Devuelve el Id_Provincia */ 
+DELIMITER $$
+USE `funes`$$
+CREATE PROCEDURE `Id_Provincia` (pNombre varchar(25))
+BEGIN
+
+select Pro.idProvincia from funes.provincia as Pro 
+where Pro.Nombre=pNombre;
+
+END$$
