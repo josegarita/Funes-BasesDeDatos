@@ -1,0 +1,10 @@
+/* Devuelve el id del Barrio */
+DELIMITER $$
+USE `funes`$$
+CREATE PROCEDURE `Id_Barrio` (pNombre varchar(30))
+BEGIN
+
+select Barr.idBarrio from funes.barrio as Barr
+where Barr.Nombre=pNombre;
+
+END$$
