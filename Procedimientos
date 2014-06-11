@@ -475,7 +475,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `actualizarNotaPersonaJuridica`(pIdP
 BEGIN
 UPDATE `funes`.`calif_per_juridica`
 SET
-`idCalifcacion` = pNota
+`idCalificacion` = pNota
 WHERE `idPersonaJuridica` = (SELECT `personajuridica`.`idPersonaJuridica`
 FROM `funes`.`personajuridica` where cedula = pIdPersona);
 
@@ -489,7 +489,6 @@ BEGIN
 UPDATE `funes`.`personajuridica`
 SET
 `Nombre` = pNombre
-
-WHERE `idPersonaJuridica` = pIdPersona;
+WHERE `Cedula` = pIdPersona;
 
 END
