@@ -1,0 +1,10 @@
+/*Devuelve el Id_Genero */ 
+DELIMITER $$
+
+CREATE PROCEDURE `Id_Genero` (ptipoG varchar (10))
+BEGIN
+select Genero.idGenero from funes.genero as Genero
+where Genero.Tipo=ptipoG;
+END$$
+
+DELIMITER ;
