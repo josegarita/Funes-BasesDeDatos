@@ -1,0 +1,11 @@
+DELIMITER ;
+
+DELIMITER $$
+USE `funes`$$
+CREATE PROCEDURE `Id_Cargo` (PCargo varchar (45))
+BEGIN
+select Carg.idCargo from funes.cargo as Carg 
+where Carg.Cargo=PCargo;
+
+
+END$$
