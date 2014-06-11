@@ -1,0 +1,5 @@
+/* Modifica la columna fechaInicio de la tabla institucion a null */
+alter table funes.institucionlabora modify column FechaInicio date null;
+
+/* Modifica la columna fechafin de la tabla institucion a null */
+alter table funes.institucionlabora modify column FechaFin date null;
