@@ -1,0 +1,11 @@
+/* Muestra el nombre y cedula de la persona fisica en la categoria que se encuentra*/
+DELIMITER $$
+USE `funes`$$
+CREATE PROCEDURE `PersonaF_x_Categoria` (pIdCategoria int)
+BEGIN
+
+select Person.Nombe, Person.Cedula from  funes.personafisica as Person,funes.categoriaporpersonafisica as CxPxF
+where CxPxF.idCategoria=pIdCategoria and Person.idPersonaFisica=CxPxF.idPersona;
+
+
+END$$
